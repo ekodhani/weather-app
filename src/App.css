@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap');
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: url('./assets/images/weather.png');
+  background-size: cover;
+  font-family: 'Nunito', sans-serif;
+  background-color: #E8E9F3;
+}
+
+.navbar {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .navbar-brand {
+  text-decoration: none;
+  color: #FF7686;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.container {
+  height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card {
+  padding: 20px;
+  display: flex;
+  column-gap: 30px;
+  background: linear-gradient(90deg, #FF7686 0%, #D72F93 100%);
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: 4px 8px 12px rgba(0,0,0,0.25);
+  text-align: center;
+  justify-content: center;
+  color: #E8E9F3 !important;
+}
+
+.card h1 {
+  margin-right: 15px !important;
+  padding: 0;
+  font-size: 48px !important;
+  font-weight: 700;
+  color: #E8E9F3 !important;
+}
+.card .location {
+  margin-right: 15px !important;
+  padding: 0;
+}
+.card h5 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.card p {
+  font-size: 12px;
+}
+.card .icon {
+  margin-right: 15px !important;
+  padding: 0;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+form {
+  box-shadow: 4px 8px 12px rgba(0,0,0,0.25);
+  display: flex;
+  align-items: center;
+}
+
+input {
+  padding: 20px;
+  border: none;
+  background-color: #E8E9F3;
+  color: #333;
+}
+
+.btn {
+  background:linear-gradient(90deg, #FF7686 0%, #D72F93 100%) !important;
+  border: none;
+  padding: 18px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 29px;
+  margin: 0 10px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #cdc8f4;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.switch input {
+  display: none;
+}
+
+.switch input:checked + .slider {
+  background-color: #FF7686;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+.switch input:checked + body{
+  background-color: #272635 !important;
+}
